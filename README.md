@@ -109,7 +109,10 @@ There are many text editors out there. We will be using an editor called VIM (sh
 - This is the editor screen. VIM has two modes, insert mode and normal mode; it starts in normal mode. The `esc` key switches to normal mode from insert mode but not the other way -- if you ever get lost just hit escape.
 - We want to create a file, but we don't need anything in it yet. To save your current file you can use the `:w` command from normal mode. Type `:w myfile6` to save this empty file as "myfile6"
 - Quit VIM with the `:q` command and list the contents of your directory to confirm that you created a file (Shortcut: `:wq` allows you to save a file and quit with just one command)
-- Open that file by running vim with the filename. This time we'll add a little text.
+- 
+
+
+Open that file by running vim with the filename. This time we'll add a little text.
 - Switch to insert mode by pressing the `a` key and type the message "Hello Editor!". Remember to press `esc` when you finish to switch back to normal mode.
 - Save the file (remember how?)
 - Let's make that message a little more specific. Delete the word 'Editor' and replace it with VIM. Look at the list of commands to see how to do this. Save the changed file.
@@ -126,10 +129,13 @@ There are many text editors out there. We will be using an editor called VIM (sh
 - Try making a directory inside dir2 by giving an absolute path. Absolute paths list the exact location of a file -- you've seen this before with the pwd command.
 
 ### Copying, moving, and renaming
-- use the `cp` command to copy the file you wrote in the last section. Try using the man file for cp to see what the correct syntax is (anything between [] braces is optional)
+- use the `cp` command to copy the file you wrote in the last section. Try using the myfile for cp to see what the correct syntax is (anything between [] braces is optional)
 - Make a new directory and then move the copied file you just created into that directory using the `mv` command.
 - Let's change the name of that file. The `mv` command doesn't have to move a file to a new location; it can simply change the name of the file in place. Change the name to something that starts with a dot (.) such as ".myFile"
 - Now check the contents of your directory with `ls`. Where is the file you just renamed? In Linux and Unix systems, files and directories with names starting in "." are hidden, so by renaming your file you actually made it a hidden file. Let's see how we can view hidden files with `ls`
+
+
+
 - The `man` command lets you view the man(ual) pages for any command that is documented. Try viewing the man pages for ls, cp, and mv. Once you've looked at each of these and have a feel for how they are laid out, take another look at the ls man page and see if you can figure out how to view hidden files (remember, hidden files begin with a dot '.' ) <sub>**hint**: viewing man pages is like using less; you can move up and down in the file with the keyboard and when you want to exit you can press the 'q' key*</sub>
 
 ### Destroying files and directories
